@@ -1,0 +1,79 @@
+/* Sidebar styling  */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 59.2px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    color: #5f6368;
+    width: 80px;
+    overflow-x: hidden;
+    transition: 0.8s;
+    height: 100%;
+  }
+
+.sidebar-hover {
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+    background: white;
+}
+
+.active  {
+    background-color: #feefc3;
+    border-radius: 50%;
+    color: #202124;
+}
+
+.active:hover {
+    background-color: #feefc3;
+}
+  
+.sidebar .sidebar-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+  
+.sidebar-item .sidebar-text {
+    color: #202124;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 22px;
+    width: 280px;
+}
+
+.sidebar-item .sidebar-text::first-letter {
+    font-size: 14.62px;
+}
+  
+.sidebar-item .material-symbols-outlined {
+    margin-left: 12px; 
+    padding: 12px;
+}
+  
+.sidebar-item:nth-child(1) {
+    margin-top: 8px;
+}
+
+.sidebar-item:hover {
+    background-color: #f0f0f0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  
+.expanded .active-item  {
+    background-color: #feefc3;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+  
+.active-item:hover {
+    background-color: #feefc3;
+}
+
+.sidebar.expanded {
+    width: 280px;
+}
+

@@ -1,0 +1,43 @@
+.note {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 130.27px;
+}
+
+.note-footer-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.popup-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 6px 0px;
+    z-index: 1;
+    top: 32px;
+    right: -122px;
+    width: 160px;
+}
+
+.popup-menu button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(60, 64, 67);
+    height: 32.13px;
+    text-wrap: nowrap;
+    text-align: left;
+    padding: 5px 10px 5px 17px;
+    width: 100%;
+}
+
+.popup-menu button:hover {
+    background-color: #f0f0f0;
+}
